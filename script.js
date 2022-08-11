@@ -18,7 +18,6 @@ async function main(){
 
 app.get("/",async (req,res)=>{
     urls = await ShortURL.find();
-    // console.log(urls);
     res.render("index",{db:urls});
 });
 
